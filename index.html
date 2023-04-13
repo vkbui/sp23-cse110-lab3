@@ -2,64 +2,124 @@
 <html lang="en">
   <head>
     <title>CSE 110 First Brainstorm</title>
+    <meta name="author" content="Vuong Bui">
+    <link rel="icon" type="image/x-icon" href="screenshots/example.png">
   </head>
   <body>
-    <h1>CSE 110 First Brainstorm</h1>
-    <h2>Brainstorming</h2>
-    <label for="meetingdate">Meeting Date:</label>
-    <input type="date" id="meetingdate" name="meetingdate">
-    <input type="submit">
+    <main>
+        <header>
+            <h1>CSE 110 First Brainstorm</h1>
+            <hr>
+            <h2><span class="meetingtype">Brainstorming</span></h2>
+            <h2>Meeting Date: 4/16/2023</h2>
+        </header>
 
-    <section>
-        <h3>Attendance:</h3>
-        <input type="radio" name="Vuong" id="Vuong">
-        <label for="Vuong">Vuong</label><br>
-        <input type="radio" name="William" id="William">
-        <label for="William">William</label><br>
-        <input type="radio" name="Niklas" id="Niklas">
-        <label for="Niklas">Niklas</label>
-    </section>
-    
-    <section>
-        <h3>Agenda:</h3>
-        <input type="checkbox" name="Agenda1" id="Agenda1">
-        <label for="Agenda1">Get to know one another</label><br>
-        <input type="checkbox" name="Agenda2" id="Agenda2">
-        <label for="Agenda2">Brainstorm project ideas</label>
-    </section>
+        <nav>
+            <h3>HTML Tutorial</h3>
+            <a href="https://www.w3schools.com/html/">HTML</a>
+        </nav>
 
-    <section>
-        <h3>Unfinished Business from Last Meeting:</h3>
-        <ol>
-            <li>Assign team roles</li>
-            <li>Get everyone's contact information</li>
-        </ol>
-    </section>
+        <section>
+            <h3>Attendance:</h3>
+            <input type="radio" name="Vuong" id="Vuong">
+            <label for="Vuong">Vuong</label><br>
+            <input type="radio" name="William" id="William">
+            <label for="William">William</label><br>
+            <input type="radio" name="Niklas" id="Niklas">
+            <label for="Niklas">Niklas</label>
+        </section>
+        
+        <div class="myDiv">
+            <h3>Agenda:</h3>
+            <input type="checkbox" name="Agenda1" id="Agenda1">
+            <label for="Agenda1">Get to know one another</label><br>
+            <input type="checkbox" name="Agenda2" id="Agenda2">
+            <label for="Agenda2">Brainstorm project ideas</label>
+        </div>
 
-    <section>
-        <h3>New Business to Talk About:</h3>
-        <ol>
-            <li>Brainstorm how to make our project different</li>
-            <li>Begin designing how the project will look like</li>
-        </ol>
-    </section>
+        <section>
+            <h3>Unfinished Business from Last Meeting:</h3>
+            <ol>
+                <li><strong>Assign team roles</strong></li>
+                <li>Get everyone's <i>contact information</i></li>
+            </ol>
+        </section>
 
-    <section>
-        <h3>Comments/Questions/Concerns:</h3>
-        <label for="name">Name: </label>
-        <input type="text" id="name" name="name"><br><br>
-        <label for="comment">Comment: </label>
-        <input type="text" id="comment" name="comment"><br><br>
-        <input type="submit" value="Submit">
-    </section>
-    
-    <section>
-        <h3>Meeting Images:</h3>
-        <img src="screenshots/example.png" alt="Image 1">
-        <h3>Meeting Videos:</h3>
-        <video width="320" height="240" controls><source src="video/video2660075151.mp4" type="video/mp4"></video>
-        <h3>Meeting Audios:</h3>
-        <audio controls><source src="video/audio2660075151.m4a"></audio>
-    </section>
+        <section>
+            <h3>New Business to Talk About:</h3>
+            <ul>
+                <li>Brainstorm how to make our project <em>different</em></li>
+                <li>Begin designing how the project will look like</li>
+            </ul>
+        </section>
+
+        <section>
+            <h3>Comments/Questions/Concerns:</h3>
+            <ol>
+                <li><b>Niklas:</b> I can't make next week's meeting.</li>
+            </ol>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name"><br><br>
+            <label for="comment">Comment: </label>
+            <input type="text" id="comment" name="comment"><br><br>
+            <input type="submit" value="Submit">
+        </section>
+        
+        <section>
+            <h3>Meeting Images:</h3>
+            <img src="screenshots/example.png" alt="Image 1">
+            <h3>Meeting Videos:</h3>
+            <video width="320" height="240" controls><source src="video/video2660075151.mp4" type="video/mp4"></video>
+            <h3>Meeting Audios:</h3>
+            <audio controls><source src="video/audio2660075151.m4a"></audio>
+        </section><br>
+
+        <details>
+            <summary><b>Meeting Summary:</b></summary>
+            <p>We did a lot of coding.</p>
+        </details><br>
+
+        <hr>
+        <section>
+            <h3>Thoughts for next meeting:</h3>
+            <form action="">
+                <fieldset>
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name"><br><br>
+                    <label for="meetingdate"></label>
+                    <input type="date" id="meetingdate" name="meetingdate">
+                    <input type="submit"><br><br>
+                    <input type="radio" name="importance" id="importance">
+                    <label for="importance">Very Important?</label><br><br>
+                    <label for="discuss">What should we discuss?: </label>
+                    <input type="text" id="discuss" name="discuss"><br><br>
+                    <input type="checkbox" name="prof" id="prof">
+                    <label for="prof">Do we need to get Powell involved?:</label><br><br>
+                    <textarea id="notes" name="notes" rows="4" cols="50">Add additional notes here.</textarea><br>
+                    <input type="submit" value="Submit"><br><br>
+                    <label for="teammates">Choose the best team member from the list:</label>
+                    <input list="teammates" name="teammate" id="teammate">
+                    <datalist id="teammates">
+                        <option value="Vuong">
+                        <option value="William">
+                        <option value="Niklas">
+                    </datalist><br><br>
+                    <label for="meets">Where should we meet?:</label>
+                    <select name="meet" id="meet">
+                        <option value="geisel">Geisel Library</option>
+                        <option value="cse building">CSE Building</option>
+                        <option value="zoom">Zoom</option>
+                    </select>
+                    <input type="submit"><br><br>
+                    <button type="button" onclick="alert('Finished!')">Finish</button>
+                </fieldset>
+                
+            </form>
+        </section>
+        
+        <footer>
+            <p>Meeting Ended at 12:24PM</p>
+        </footer>
+    </main>
   </body>
 </html>
