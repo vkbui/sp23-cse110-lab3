@@ -1,0 +1,131 @@
+header {
+    font-family: 'Rubik Pixels', cursive;
+    position: relative;
+    text-align: center;
+    text-decoration: underline overline rgb(234, 87, 87);
+    width: 5in;
+    border-style: solid;
+    border-color: rgb(234, 87, 87);
+    border-width: 10px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.attendance {
+    position: relative;
+    background-color: hsl(0, 100%, 50%);
+    color: #f1f1f1;
+    padding: 10px;
+}
+
+a:hover {
+    color: yellow;
+}
+
+a:active {
+    color: aqua;
+}
+
+ul, ol {
+    background-color: cadetblue;
+}
+
+.agenda {
+    position: static;
+    width: 300px;
+    border-style: solid;
+    border-color: rgb(5, 166, 2);
+    border-width: 10px;
+    border-radius: 10px;
+    padding: 0px 10px 10px 10px;
+    margin: 10pt 10pt 10pt 10pt;
+}
+
+.agenda ~ h3 {
+    background-color: violet;
+}
+
+section[target="cool"] {
+    background-color: yellow;
+}
+
+div.newbusiness {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: DodgerBlue;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.newbusiness > div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: auto;
+    text-align: center;
+}
+
+div.grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196F3;
+    padding: 10px;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid > div {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+      background-color: lightgreen;
+    }
+}
+
+img {
+    height: 20vh;
+    max-width: 700px;
+    min-width: 20vw;
+}
+
+audio {
+    display: none;
+}
+
+p {
+    line-height: 2em;
+    display: inline;
+    font-family: 'Rubik Pixels', cursive;
+}
+
+#important {
+    color: pink;
+}
+
+* {
+    color: black;
+}
+
+.attachments h3 {
+    background-color: orangered;
+}
+
+section + footer {
+    background-color: cornflowerblue;
+}
+
+section.awesome {
+    background-color: mediumseagreen;
+}

@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* internal CSS  */
+        body {
+          background-color: linen;
+        }
+    </style>
     <title>CSE 110 First Brainstorm</title>
     <meta name="author" content="Vuong Bui">
     <link rel="icon" type="image/x-icon" href="screenshots/example.png">
@@ -8,18 +15,23 @@
   <body>
     <main>
         <header>
-            <h1>CSE 110 First Brainstorm</h1>
+            <!--inline CSS-->
+            <h1 style="color:maroon;text-align:center;">CSE 110 First Brainstorm</h1>
             <hr>
             <h2><span class="meetingtype">Brainstorming</span></h2>
             <h2>Meeting Date: 4/16/2023</h2>
         </header>
+
+        <div class="intro">
+            <p id="important">Hi everyone!</p> Welcome to our first meeting! <br>
+        </div>
 
         <nav>
             <h3>HTML Tutorial</h3>
             <a href="https://www.w3schools.com/html/">HTML</a>
         </nav>
 
-        <section>
+        <div class="attendance">
             <h3>Attendance:</h3>
             <input type="radio" name="Vuong" id="Vuong">
             <label for="Vuong">Vuong</label><br>
@@ -27,9 +39,9 @@
             <label for="William">William</label><br>
             <input type="radio" name="Niklas" id="Niklas">
             <label for="Niklas">Niklas</label>
-        </section>
+        </div>
         
-        <div class="myDiv">
+        <div class="agenda">
             <h3>Agenda:</h3>
             <input type="checkbox" name="Agenda1" id="Agenda1">
             <label for="Agenda1">Get to know one another</label><br>
@@ -37,7 +49,15 @@
             <label for="Agenda2">Brainstorm project ideas</label>
         </div>
 
-        <section>
+        <div class="secondagenda">
+            <h3>Agenda 2:</h3>
+            <input type="checkbox" name="Agenda1" id="Agenda1">
+            <label for="Agenda1">Get to know one another</label><br>
+            <input type="checkbox" name="Agenda2" id="Agenda2">
+            <label for="Agenda2">Brainstorm project ideas</label>
+        </div>
+
+        <section target="cool">
             <h3>Unfinished Business from Last Meeting:</h3>
             <ol>
                 <li><strong>Assign team roles</strong></li>
@@ -45,34 +65,46 @@
             </ol>
         </section>
 
-        <section>
+        <div class="newbusiness">
             <h3>New Business to Talk About:</h3>
-            <ul>
-                <li>Brainstorm how to make our project <em>different</em></li>
-                <li>Begin designing how the project will look like</li>
-            </ul>
-        </section>
+                <div>Brainstorm how to make our project <em>different</em></div>
+                <div>Begin designing how the project will look like</div>
+                <div>Brainstorm how to make our project <em>different</em></div>
+                <div>Begin designing how the project will look like</div>
+                <div>Brainstorm how to make our project <em>different</em></div>
+                <div>Begin designing how the project will look like</div>
+        </div>
 
         <section>
             <h3>Comments/Questions/Concerns:</h3>
-            <ol>
+            <ul>
                 <li><b>Niklas:</b> I can't make next week's meeting.</li>
-            </ol>
+            </ul>
             <label for="name">Name: </label>
             <input type="text" id="name" name="name"><br><br>
             <label for="comment">Comment: </label>
             <input type="text" id="comment" name="comment"><br><br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="Submit"><br><br>
         </section>
+
+        <h3>Grid of stuff:</h3>
+        <div class="grid">
+            <div>stuff</div>
+            <div>more stuff</div>
+            <div>third stuff</div>
+            <div>stuff</div>
+            <div>more stuff</div>
+            <div>third stuff</div>
+        </div>
         
-        <section>
+        <div class="attachments">
             <h3>Meeting Images:</h3>
             <img src="screenshots/example.png" alt="Image 1">
             <h3>Meeting Videos:</h3>
             <video width="320" height="240" controls><source src="video/video2660075151.mp4" type="video/mp4"></video>
             <h3>Meeting Audios:</h3>
             <audio controls><source src="video/audio2660075151.m4a"></audio>
-        </section><br>
+        </div><br>
 
         <details>
             <summary><b>Meeting Summary:</b></summary>
@@ -80,7 +112,7 @@
         </details><br>
 
         <hr>
-        <section>
+        <section class="awesome">
             <h3>Thoughts for next meeting:</h3>
             <form>
                 <fieldset>
