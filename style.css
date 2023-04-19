@@ -88,7 +88,7 @@ div.grid {
     text-align: center;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (max-width: 1000px) {
     body {
       background-color: lightgreen;
     }
